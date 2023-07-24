@@ -1,0 +1,64 @@
+.custom-layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+body{
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+  li {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-container {
+  display: flex;
+  flex: 1; /* Esto hace que el contenido principal ocupe todo el espacio disponible */
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
+
+.main-content {
+  flex: 1; /* Hace que el contenido principal ocupe todo el espacio restante del contenedor */
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
